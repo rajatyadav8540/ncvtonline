@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #myInput {
+            background-image: url('/css/searchicon.png');
+            background-position: 10px 10px;
+            background-repeat: no-repeat;
+            width: 100%;
+            font-size: 16px;
+            padding: 12px 20px 12px 40px;
+            border: 1px solid #ddd;
+            margin-bottom: 12px;
+        }
+
+        #myTable {
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid #ddd;
+            font-size: 18px;
+        }
+
+        #myTable th,
+        #myTable td {
+            text-align: left;
+            padding: 12px;
+        }
+
+        #myTable tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        #myTable tr.header,
+        #myTable tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+    
+</head>
+  <body onload="give()">
+
+    <nav class="navbar navbar-expand-lg navbar-light  font-weight-bold uppercase shadow fixed-top bg-light " id="navBar">
+        <div class="container">
+      <a class="navbar-brand" href="index.html">NCVTOnline</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="resultpage.html">Result</a>
+          </li>
+          <li class="nav-item active ">
+            <a class="nav-link" href="privacy.html" >
+              Privacy policy
+            </a>
+            
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+    </nav>
+
+      <div class="container my-5 py-5">
+    <h2 class="">Search your result</h2>
+
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+    <table id="myTable" class="">
+            <tr>
+              <th>Name</th>
+              <th>Roll no./registration no.</th>
+              <th>Date Of Birth</th>
+              <th>Branch</th>
+              <th>Result</th>
+            </tr>
+
+              <tr>
+                  
+                <td>Rajat Yadav</td> 
+                <td>1873510042</td> 
+                <td>30/10/1999</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo1">Result</button>
+                </td>
+                    <div id="demo1" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Subir Singh</td> 
+                <td>1873510053</td> 
+                <td>15/09/1999</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo2">Result</button>
+                </td>
+                    <div id="demo2" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Yaspal Bharti</td> 
+                <td>1873510058</td> 
+                <td>30/04/1999</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo3">Result</button>
+                </td>
+                    <div id="demo3" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Deepak Kumar</td> 
+                <td>1873510017</td> 
+                <td>22/11/1999</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo4">Result</button>
+                </td>
+                    <div id="demo4" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Yagyik Shrivastava</td> 
+                <td>1873510057</td> 
+                <td>21/04/1997</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo5">Result</button>
+                </td>
+                    <div id="demo5" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Shivam Singh</td> 
+                <td>1873510049</td> 
+                <td>24/08/1997</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo6">Result</button>
+                </td>
+                    <div id="demo6" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Ani Yadav</td> 
+                <td>1873510007</td> 
+                <td>23/05/1997</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo7">Result</button>
+                </td>
+                    <div id="demo7" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Ankit Dohre</td> 
+                <td>1873510008</td> 
+                <td>15/11/1997</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo8">Result</button>
+                </td>
+                    <div id="demo8" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Akanshu Rajput</td> 
+                <td>1873510006</td> 
+                <td>12/10/1997</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo9">Result</button>
+                </td>
+                    <div id="demo9" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Amresh Yadav</td> 
+                <td>1873510005</td> 
+                <td>30/07/1998</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo10">Result</button>
+                </td>
+                    <div id="demo10" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+              <tr>
+                  
+                <td>Aditya Kumar</td> 
+                <td>1873510004</td> 
+                <td>3/11/1999</td> 
+                <td>Computer Science and Engineering</td> 
+                <td>
+                    <button data-toggle="collapse" data-target="#demo11">Result</button>
+                </td>
+                    <div id="demo11" class="collapse ">
+                        <div>
+                            <ul>
+                                <li>first year <br><img src="1.png" alt=""></li>
+                                <li>second year <br><img src="1.png" alt=""></li>
+                                <li> third year <br><img src="1.png" alt=""></li>
+                                <li>Fourth year <br><img src="1.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+              </tr>
+
+             
+              
+
+        
+    </table>
+</div>
+
+<div class="card container mb-2 ">
+    <div class="card-footer">
+        This website does not authenticate results as legal and academic purposes.
+    </div>
+</div>
+    <script>
+
+        function give(){
+            var  input = document.getElementById("myInput");
+            setTimeout(function(){input.click();},200000);
+            input.value=0;
+
+        }
+
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("myTable");
+            tr = table.getElementsByTagName("tr");
+            
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase()==filter) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                        
+                    }
+                }
+            }
+        }
+    </script>  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
